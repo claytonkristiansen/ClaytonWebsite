@@ -16,4 +16,9 @@ export class AppComponent {
   {
     this.router.navigate(['first']);
   }
+  
+  GoToOldPersonalPage()
+  {
+    this.router.navigate(['']);
+  }
 }
