@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FirstComponent } from './first/first.component';
-import { SecondComponent } from './second/second.component';
-import { OldpersonalpageComponent } from './oldpersonalpage/oldpersonalpage.component';
+import { MainComponent } from './main/main.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { CoolAlgorithmsComponent } from './cool-algorithms/cool-algorithms.component';
 
 const routes: Routes = [
-    { path: 'first', component: FirstComponent },
-    { path: 'second', component: SecondComponent },
-    { path: '', component: OldpersonalpageComponent }
+    { path: '', component: MainComponent },
+    { path: 'portfolio', component: PortfolioComponent },
+    { path: 'coolalgorithms', component: CoolAlgorithmsComponent }
 ];
 
 @NgModule({

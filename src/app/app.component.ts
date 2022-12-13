@@ -12,13 +12,27 @@ export class AppComponent {
 
   constructor(private router: Router) {}
 
-  GoToFirst()
-  {
-    this.router.navigate(['first']);
-  }
-  
-  GoToOldPersonalPage()
+  GoToMain()
   {
     this.router.navigate(['']);
+  }
+  
+  GoToGitHub()
+  {
+    window.location.href = "https://github.com/claytonkristiansen";
+  }
+
+  GoToLinkedIn()
+  {
+    window.location.href = "https://linkedin.com/in/claytonkristiansen";
+  }
+
+  GoToPortfolio()
+  {
+    this.router.navigate(['portfolio']);
+  }
+  GoToCoolAlgorithms()
+  {
+    this.router.navigate(['coolalgorithms']);
   }
 }
