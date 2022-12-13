@@ -1,0 +1,19 @@
+<body>
+    <button onclick="window.location.href='index.html'" style="float: left;">Home</button>
+    <br>
+    <input id="valinput" placeholder="Enter number" onkeypress="oninputkeypress(event, document.getElementById('valinput').value)">
+    <button onclick="onclickadd(document.getElementById('valinput').value)">Add to MPQ</button>
+    <br>
+    <br>
+    <button onclick="onclicknext()">Step</button>
+    <button onclick="onclickrun()">Run</button>
+    <button onClick="onclickreset()" >Reset</button>
+    <div style="border: 3px; border-style: solid; border-color: black; padding-left: 1em; padding-bottom: 10em; background-color: black; color: white; ">
+        <p id="outputtext" style="font-size: large; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"></p>
+    </div>
+    <p>The Heap Sort Algorithm uses a heap based minimum priority queue (MPQ) to filter the minimum item to the top (left) of the heap. The top item can then be removed with log(n) efficiency. Likewise, 
+        items can be added to this MPQ with log(n) efficiency, making Heap Sort highly efficient. 
+    </p>
+</body>
+
+<script src="../../assets/scripts/heapsort.js"></script>
