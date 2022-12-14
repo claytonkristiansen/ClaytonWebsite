@@ -21,7 +21,7 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/tablogo.ico",
+              "src/assets/tablogo.ico",
               "src/assets",
               "src/web.config"
             ],
@@ -88,7 +88,7 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "src/tablogo.ico",
+              "src/assets/tablogo.ico",
               "src/assets"
             ],
             "styles": [
