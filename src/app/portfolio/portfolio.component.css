@@ -1,0 +1,4 @@
+div.CenteredDiv {
+    display: flex;
+    justify-content: center;
+}

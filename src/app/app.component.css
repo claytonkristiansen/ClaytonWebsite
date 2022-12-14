@@ -38,10 +38,28 @@ button.SideButton {
     border: none;
     font-size: large;
     text-align: left;
+    cursor:pointer;
 }
 
 button.SideButton:hover {
     font-weight: bold;
+    background-color: #50000060;
+}
+
+#Home {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: x-large;
+    cursor:pointer;
+}
+
+#GitHubIcon {
+    cursor: pointer;
+}
+
+#LinkedInIcon {
+    cursor: pointer;
 }
 
 mat-icon {

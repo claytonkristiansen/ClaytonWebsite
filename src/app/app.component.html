@@ -1,20 +1,10 @@
 <mat-drawer-container class="MyContainer">
     <mat-drawer #drawer class="MyDrawer" mode="over">
-        <div>
-            <button class="SideButton" (click)="GoToMain()">Home</button>
-        </div>
-        <div>
-            <button class="SideButton" (click)="GoToGitHub()">GitHub</button>
-        </div>
-        <div>
-            <button class="SideButton" (click)="GoToLinkedIn()">LinkedIn</button>
-        </div>
-        <div>
-            <button class="SideButton" (click)="GoToPortfolio()">Portfolio</button>
-        </div>
-        <div>
-            <button class="SideButton" (click)="GoToCoolAlgorithms()">Cool Algorithms</button>
-        </div>
+        <div><button class="SideButton" (click)="GoToMain()">Home</button></div>
+        <div><button class="SideButton" (click)="GoToPortfolio()">Portfolio</button></div>
+        <div><button class="SideButton" (click)="GoToCoolAlgorithms()">Cool Algorithms</button></div>
+        <div><button class="SideButton" (click)="GoToGitHub()">GitHub</button></div>
+        <div><button class="SideButton" (click)="GoToLinkedIn()">LinkedIn</button></div>
     </mat-drawer>
     <mat-drawer-content>
         <mat-toolbar>
@@ -22,9 +12,11 @@
                 <mat-icon>menu</mat-icon>
             </button>
             <span id="ToolbarSpacer1"></span>
-            Clayton Kristiansen
+            <button id="Home" (click)="GoToMain()">Clayton Kristiansen</button>
             <span id="ToolbarSpacer2"></span>
-            Social Links
+            <img id="GitHubIcon" src="../assets/githubwhite32.ico" alt="GitHub" (click)="GoToGitHub()">
+            <span id="ToolbarSpacer1"></span>
+            <img id="LinkedInIcon" src="../assets/linkedin32.ico" alt="LinkedIn" (click)="GoToLinkedIn()">
         </mat-toolbar>
         <div class="RouterOutletDiv">
             <router-outlet></router-outlet>

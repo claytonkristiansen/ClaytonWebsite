@@ -21,7 +21,7 @@ export class AppComponent implements AfterViewInit {
   GoToMain()
   {
     this.router.navigate(['']);
-    this.drawer.toggle();
+    this.drawer.close();
   }
   
   GoToGitHub()
