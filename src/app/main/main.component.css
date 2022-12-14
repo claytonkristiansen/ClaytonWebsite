@@ -1,0 +1,27 @@
+img.ProfilePicture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+h1.SectionHeader {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.paragraph {
+    text-indent: 40px;
+    font-size: medium;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+p.CenteredItem {
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+}
