@@ -12,7 +12,7 @@ var canvas = document.createElement('canvas');
 canvas.id = "canvas";
 canvas.style.position = "absolute";
 canvas.style.border = "border: 1px solid rgb(0, 0, 0, 0);";
-var body = document.getElementsByTagName("body")[0];
+var body = document.getElementById("dikstrasbody");
 body.appendChild(canvas);
 
 var graph = new Graph(width + 1, height + 1);
@@ -88,6 +88,7 @@ document.addEventListener('keyup', (e) => {
     }
 });
 
+console.log("Adding event listener")
 // Mouse event handlers (probably should be in a class)
 canvas.addEventListener('mousemove', e => {
     // Find nearest grid intersection

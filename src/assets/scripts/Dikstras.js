@@ -1,4 +1,3 @@
-
 const MAX_PATH_LENGTH = 2**32;
 const SQRT_2 = Math.sqrt(2);
 
@@ -367,7 +366,4 @@ class Graph
         }
         return this.ShortestPathPoints();
     }
-
-    
-
 }
