@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { MatDrawer } from '@angular/material/sidenav';
 // import { Router } from 'express';
 import { Router } from '@angular/router';
 
@@ -7,14 +8,20 @@ import { Router } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
+  @ViewChild('drawer') drawer: MatDrawer;
   title = 'ClaytonWebsite';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+  }
+
+  ngAfterViewInit(): void {
+  }
 
   GoToMain()
   {
     this.router.navigate(['']);
+    this.drawer.toggle();
   }
   
   GoToGitHub()
@@ -30,9 +37,11 @@ export class AppComponent {
   GoToPortfolio()
   {
     this.router.navigate(['portfolio']);
+    this.drawer.toggle();
   }
   GoToCoolAlgorithms()
   {
     this.router.navigate(['coolalgorithms']);
+    this.drawer.toggle();
   }
 }
