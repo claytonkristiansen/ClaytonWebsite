@@ -107,5 +107,3 @@ class GridPainter
         }
     }
 }
-
-console.log("RAN")
