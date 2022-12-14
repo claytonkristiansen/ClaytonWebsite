@@ -29,7 +29,10 @@
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+                "src/assets/scripts/GridPainter.js",
+                "src/assets/scripts/Dikstras.js"
+            ]
           },
           "configurations": {
             "production": {
